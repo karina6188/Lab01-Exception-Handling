@@ -52,7 +52,21 @@ namespace lab01_exception_handling
 
         static int[] Populate(int[] arr)
         {
-
+            try
+            {
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    Console.WriteLine($"Please enter a number: 1 of {i}");
+                    string num = Console.ReadLine();
+                    int convertNum = Convert.ToInt32(num);
+                    arr[i] = convertNum;
+                }
+                    return arr;
+            }
+            catch
+            {
+                throw;
+            }
         }
 
         static int GetSum(int[] arr)
