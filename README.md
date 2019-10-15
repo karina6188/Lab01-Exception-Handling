@@ -52,3 +52,7 @@ Application End Result
 1.3: Added GetSum method - 2019 Oct 15
 
 1.4: Added GetProduct method - 2019 Oct 15
+
+1.5: Added GetQuotient method - 2019 Oct 15
+
+1.6: Updated README. The program is complete - 2019 Oct 15
