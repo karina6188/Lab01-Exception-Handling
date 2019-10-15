@@ -73,7 +73,7 @@ namespace lab01_exception_handling
                     int convertNum = Convert.ToInt32(num);
                     arr[i] = convertNum;
                 }
-                    return arr;
+                return arr;
             }
             catch
             {
@@ -103,7 +103,19 @@ namespace lab01_exception_handling
 
         static int GetProduct(int[] arr, int sum)
         {
-
+            try
+            {
+                Console.WriteLine($"Please select a random number between 1 and {arr.Length}");
+                string num = Console.ReadLine();
+                int convertNum = Convert.ToInt32(num);
+                int product = sum * (convertNum - 1);
+                return product;
+            }
+            catch (IndexOutOfRangeException e)
+            {
+                Console.WriteLine(e.Message);
+                throw;
+            }
         }
 
         static int GetQuotient(int product)

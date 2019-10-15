@@ -37,3 +37,4 @@ Change Log
 1.1: Created the project and added Main, StartSequence methods - 2019 Oct 15
 1.2: Added Populate method - 2019 Oct 15
 1.3: Added GetSum method - 2019 Oct 15
+1.4: Added GetProduct method - 2019 Oct 15
